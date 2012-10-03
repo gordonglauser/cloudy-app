@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%= @file_upload.name %>
+</p>
+
+<p>
+  <b>Filetype:</b>
+  <%= @file_upload.filetype %>
+</p>
+
+<p>
+  <b>Filelink:</b>
+  <%= @file_upload.filelink %>
+</p>
+
+<p>
+  <b>Filesize:</b>
+  <%= @file_upload.filesize %>
+</p>
+
+
+<%= link_to 'Edit', edit_file_upload_path(@file_upload) %> |
+<%= link_to 'Back', file_uploads_path %>
